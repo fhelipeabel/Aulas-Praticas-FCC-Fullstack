@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">
+      Formulário de pesquisa FreeCodeCamp
+    </h1>
+    <p id="description">
+      Obrigado por reservar um tempo para nos ajudar a melhorar a plataforma!
+    </p id="description">
+    <form id="survey-form">
+      <label id="name-label">
+        Nome<span style="color:#850909">*</span>
+        <input placeholder="Digite seu nome" id="name" type="text" required>
+      </label><br>
+      <label id="email-label">
+        E-mail<span style="color:#850909">*</span>
+        <input placeholder="Digite seu e-mail" id="email" type="email" required>
+      </label><br>
+      <label id="number-label">
+        Idade (opcional)
+      <input placeholder="Idade" id="number" type="number" min="7" max="120">
+      </label><br>
+      <p>Qual opção descreve melhor sua ocupação atual?<p>
+      <select id="dropdown">
+        <option selected value="Selecione sua ocupação">
+          Selecione sua ocupação
+        </option>
+        <option value="Estudante">
+          Estudante
+        </option>
+        <option value="Trabalho em tempo integral">
+          Trabalho em tempo integral
+        </option>
+        <option value="Estudante em tempo integral">
+          Estudante em tempo integral
+        </option>
+        <option value="Prefiro não dizer">
+          Prefiro não dizer
+        </option>  
+        <option value="outro">
+          Outro
+        </option>
+        </select>
+      <p>
+        Você recomendaria o FreeCodeCamp para algum amigo?
+      </p>
+      <label for="com-certeza-label">
+      <input id="com-certeza-label" type="radio" selected value="com-certeza" name="recomendaria" checked/>
+      Com certeza
+      </label>
+      <label for="talvez-label">
+      <input id="talvez-label" type="radio" value="talvez" name="recomendaria"/>
+      Talvez
+      </label>
+      <label for="nao-tenho-certeza-label">
+      <input id="nao-tenho-certeza-label" type="radio" value="nao-tenho-certeza" name="recomendaria"/>
+      Não tenho certeza
+      </label>
+      <label for="nao-label">
+      <input id="nao-label" type="radio" value="nao" name="recomendaria"/>
+      Não
+      </label>
+      <p>
+        Qual é o seu recurso favorito do freeCodeCamp?
+      </p>
+      <select>
+        <option disabled selected>
+          Selecione uma opção
+        </option>
+        <option value="Desafios">
+          Desafios
+        </option>
+        <option value="Projetos">
+          Projetos
+        </option>
+        <option value="Comunidade">
+          Comunidade
+        </option>
+        <option value="Código aberto">
+          Código aberto
+        </option>
+      </select>
+      <p>
+        O que você gostaria de ver melhorado? (Marque todas as opções aplicáveis)
+      </p>
+      <label>
+        <input type="checkbox" name="prefer" value="Projetos Front-end"/>
+        Projetos Front-end
+      </label><br>
+      <label>
+        <input type="checkbox" name="prefer" value="Projetos Back-end"/>
+        Projetos Back-end
+      </label><br>
+      <label>
+        <input type="checkbox" name="prefer" value="Visualização de Dados"/>
+        Visualização de Dados
+      </label><br>
+      <label>
+        <input type="checkbox" name="prefer" value="Desafios"/>
+        Desafios
+      </label><br>
+      <label>
+        <input type="checkbox" name="prefer" value="Comunidade"/>
+        Comunidade
+      </label><br>
+      <label>
+        <input type="checkbox" name="prefer" value="Comunidade"/>
+        Comunidade
+      </label><br>
+      <label>
+        <input type="checkbox" name="prefer" value="Comunidade de Código Aberto"/>
+        Comunidade de Código Aberto
+      </label><br>
+      <label>
+        <input type="checkbox" name="prefer" value="Salas de ajuda do Gitter"/>
+        Salas de ajuda do Gitter
+      </label><br>
+      <label>
+        <input type="checkbox" name="prefer" value="Vídeos"/>
+        Vídeos
+      </label><br>
+      <label>
+        <input type="checkbox" name="prefer" value="Encontros na Cidade"/>
+        Encontros na Cidade
+      </label><br>
+      <label>
+        <input type="checkbox" name="prefer" value="Wiki"/>
+        Wiki
+      </label><br>
+      <label>
+        <input type="checkbox" name="prefer" value="Fórum"/>
+        Fórum
+      </label><br>
+      <label>
+        <input type="checkbox" name="prefer" value="Cursos adicionais"/>
+        Cursos adicionais
+      </label>
+      <p>
+        Algum comentário ou sugestão?
+      </p>
+      <textarea placeholder="Digite seu comentário aqui..."></textarea><br>
+      <button type="sumbit" id="submit">
+        Enviar
+      </button>
+    </form>
+  </body>
+</html>
