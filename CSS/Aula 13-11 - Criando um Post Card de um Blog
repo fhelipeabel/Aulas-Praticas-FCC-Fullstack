@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="blog-post-card">
+        <img src="https://cdn.freecodecamp.org/curriculum/labs/cover-photo.jpg" width="350px" alt="post-img" class="post-img">
+        <div class="post-content">
+            <h2 class="post-title">Por que devo contratar um Desenvolvedor Web?</h2>
+            <p class="post-excerpt">Conheça os motivos para contratar um bom desenvolvedor web para criar seu site, LandingPage ou App, e descubra você mesmo como é sair na frente do seu concorrente.</p>
+            <a class="read-more">Read More</a>
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+    .blog-post-card {
+  background: white;
+  border-radius: 10px;
+  width: 350px;
+  text-align: center;
+}
+
+.post-img {
+  width: 100%;
+  border-bottom: 2px solid grey;
+}
+
+.post-content {
+  padding: 10px;
+}
+
+.post-title, .post-excerpt {
+  color: #242424;
+  margin: 10px;
+  font-family: arial, inter, Montserrat, Calibri;
+}
+
+.read-more {
+  color: white;
+  background: green;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 7px;
+  display: inline-block;
+}
+
+.read-more:hover {
+  background: silver;
+  color: green;
+}
+</style>
