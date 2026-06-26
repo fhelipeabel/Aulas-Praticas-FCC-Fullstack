@@ -1,0 +1,77 @@
+.container {
+  margin: 30px auto;
+  padding: 20px;
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+  width: 40%;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+input, label, textarea, select {
+  display: flex;
+  width: 100%;
+  padding: 10px 0px;
+}
+
+input:invalid, select:invalid, textarea:invalid, select:invalid {
+  border: 1px solid green;
+}
+
+input, textarea {
+  border: 1px solid red;
+  border-radius: 5px;
+}
+
+form {
+  text-align: center;
+  padding: 10px;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border: 1px solid rgb(0, 4, 255);
+}
+    
+input:invalid, select:invalid, textarea:invalid {
+  border: 1px solid red;
+}
+
+button {
+  background-color: green;
+  color: #fafafa;
+  padding: 8px 10px;
+}
+
+button:hover {
+  background-color: pink;
+}
+
+.radio-group {
+  display: flex;
+  justify-content: space-around;
+}
+
+.radio-group input[type="radio"] {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.radio-group input[type="radio"]:checked {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  border: 2px solid green;
+  background: lightgreen;
+  box-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.2);
+}
+
+input:first-of-type {
+  border-radius: 5px;
+}
+
+.radio-group input[type="radio"]:checked + label {
+  color: green;
+}
